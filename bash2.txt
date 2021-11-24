@@ -1,0 +1,7 @@
+read -p "Enter a number to print it's multiplication table: " n
+read -p "Enter the limit: " l
+for ((i=1;i<=l;i++))
+do
+ res=$((n*i))
+ echo $n x $i = $res
+done

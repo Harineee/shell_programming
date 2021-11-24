@@ -1,0 +1,22 @@
+read -p "How many numbers?: " size
+echo "Enter numbers: "
+read -a nums
+
+#even=0
+#odd=0
+for ((i=0;i<size;i++))
+do
+ 
+if [ `expr ${nums[$i]} % 2` == 0 ]
+then
+	echo "${nums[$i]} is even"
+        even=$(($even+1))
+else
+	echo "${nums[$i]} is Odd"
+        odd=$(($odd+1))
+fi
+done
+
+echo "Even $even Odd $odd"  
+
+
