@@ -5,3 +5,4 @@ do
  res=$((n*i))
  echo $n x $i = $res
 done
+#test
